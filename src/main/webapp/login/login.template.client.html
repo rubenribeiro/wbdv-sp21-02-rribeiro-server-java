@@ -18,21 +18,27 @@
             <div class="form-group row mb-2">
                 <label for="username" class="col-md-2 col-sm-12 col-form-label">Username </label>
                 <div class="col-md-10 col-sm-12">
-                    <input type="text" class="form-control" id="username" autofocus required />
+                    <input type="text" class="form-control rr-username" id="username" placeholder="Alice" autofocus required />
                 </div>
             </div>
             <div class="form-group row mb-4">
                 <label for="password" class="col-md-2 col-sm-12 col-form-label">Password </label>
                 <div class="col-md-10 col-sm-12">
-                    <input type="password" class="form-control" id="password" autofocus required />
+                    <input type="password" class="form-control rr-field" id="password" placeholder="123qwe#$%" autofocus required />
                 </div>
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <div class="form-group row">
+                <label class="col-md-2 col-sm-0 col-form-label"></label>
+                <div class="col-md-10 col-sm-12">
+                    <button class="btn btn-lg btn-primary btn-block rr-login" type="submit">Sign in</button>
+                </div>
+                <label class="col-md-2 col-sm-0 col-form-label"></label>
+                <div class="col-md-10 col-sm-12 d-flex justify-content-between align-items-center">
+                    <a href="#">Forgot Password</a>
+                    <a href="#">Sign up</a>
+                </div>
+            </div>
         </form>
-        <div class="d-flex justify-content-between mb-1 align-items-center ">
-            <a href="#">Forgot Password</a>
-            <a href="#">Sign up</a>
-        </div>
     </div>
 
 </body>
