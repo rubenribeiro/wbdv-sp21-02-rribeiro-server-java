@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Course Management System Profile Webpage">
+    <meta name="author" content="RR">
+    <title>Course Management System: Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./profile.style.client.css">
+</head>
+<body>
+<div class="container">
+    <form class="form-signin" action="#">
+        <div class="mt-4 mb-3">
+            <h1>Profile</h1>
+            <div class="alert alert-success" role="alert">
+                Profile successfully saved
+            </div>
+        </div>
+
+        <div class="form-group row mb-2">
+            <label for="usernameFld" class="col-md-2 col-sm-12 col-form-label">Username </label>
+            <div class="col-md-10 col-sm-12">
+                <input type="text" class="form-control rr-username" id="usernameFld" placeholder="Alice" disabled />
+            </div>
+        </div>
+        <div class="form-group row mb-2">
+            <label for="phoneFld" class="col-md-2 col-sm-12 col-form-label">Phone </label>
+            <div class="col-md-10 col-sm-12">
+                <input type="tel" class="form-control rr-field" id="phoneFld" placeholder="(555) 123-4567" pattern="[0-9]{3} [0-9]{3}-[0-9]{4}" autofocus required />
+            </div>
+        </div>
+        <div class="form-group row mb-2">
+            <label for="emailFld" class="col-md-2 col-sm-12 col-form-label">Email </label>
+            <div class="col-md-10 col-sm-12">
+                <input type="email" class="form-control rr-field" id="emailFld" placeholder="alice@nightmareland.com" required />
+            </div>
+        </div>
+        <div class="form-group row mb-2">
+            <label for="roleFld" class="col-md-2 col-sm-12 col-form-label">Role </label>
+            <div class="col-md-10 col-sm-12">
+                <select id="roleFld" class="form-control custom-select" required>
+                    <option>Faculty</option>
+                    <option>Student</option>
+                    <option>Admin</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row mb-4">
+            <label for="dobFld" class="col-md-2 col-sm-12 col-form-label">Date of Birth </label>
+            <div class="col-md-10 col-sm-12">
+                <input type="date" min="1900-01-01" max="2021-01-28" value="YYYY-MM-DD" class="form-control rr-field" id="dobFld" placeholder="dob goes here" required />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-2 col-sm-0 col-form-label"></label>
+            <div class="col-md-10 col-sm-12 mb-2">
+                <button id="updateBtn" class="btn btn-md btn-success btn-block rr-register">Update</button>
+            </div>
+            <label class="col-md-2 col-sm-0 col-form-label"></label>
+            <div class="col-md-10 col-sm-12">
+                <button id="logoutBtn" class="btn btn-md btn-danger btn-block rr-register">Logout</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
