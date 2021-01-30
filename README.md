@@ -1,5 +1,5 @@
 # Whiteboard Course Management System
-A simple course management system built for wbdv-sp21-02
+A simple course management system built for wbdv-sp21-02.
 
 ![Whiteboard Dashboard](docs/images/dashboard.png)
 
