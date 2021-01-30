@@ -12,3 +12,6 @@ A simple course management system built for wbdv-sp21-02.
 - Material UI x.y
 - Java 1.8.x
 - Spring Boot x.y.z
+
+## Demo
+- Heroku app [URL](https://dry-brushlands-63182.herokuapp.com).
