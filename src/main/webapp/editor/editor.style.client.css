@@ -1,0 +1,6 @@
+/* Editor style */
+
+rr-borderless {
+    border-radius: 0 !important;
+    color: red !important;
+}
