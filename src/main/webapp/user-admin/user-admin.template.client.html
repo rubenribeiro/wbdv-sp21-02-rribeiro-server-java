@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="RR">
+    <title>Course Management System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./user-admin.style.client.html.css" type="text/css"/>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Whiteboard</a>
+            <ul class="nav navbar-nav navbar-right text-light">
+                <li><a class="p-2 text-light" href="../index.html">Dashboard</a></li>
+                <li class="d-none d-md-block">/</li>
+                <li><a class="p-2 text-light" href="./user-admin.template.client.html">User Admin</a></li>
+                <li class="d-none d-md-block">/</li>
+                <li><a class="p-2 text-light" href="../editor/editor.template.client.html">Editor</a></li>
+                <li class="d-none d-md-block">/</li>
+                <li><a class="p-2 text-light" href="../profile/profile.template.client.html">Profile</a></li>
+                <li class="d-none d-md-block">/</li>
+                <li><a class="p-2 text-light" href="../register/register.template.client.html">Register</a></li>
+                <li class="d-none d-md-block">/</li>
+                <li><a class="p-2 text-light" href="../login/login.template.client.html">Sign in</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="container position-relative">
+    <div class="mt-4 mb-3">
+        <h1>User Admin</h1>
+    </div>
+
+    <table class="table">
+        <thead class="bg-dark border border-secondary text-light">
+        <tr>
+            <th>Username</th>
+            <th>Password</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Role</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr class="rr-form">
+            <td><input id="usernameFld" class="form-control"
+                       placeholder="Username" /></td>
+            <td><input id="passwordFld" class="form-control"
+                       placeholder="Password" /></td>
+            <td><input id="firstNameFld" class="form-control"
+                       placeholder="First Name" /></td>
+            <td><input id="lastNameFld" class="form-control"
+                       placeholder="Last Name" /></td>
+            <td><select id="roleFld" class="form-control">
+                <option value="Faculty">Faculty</option>
+                <option value="Student">Student</option>
+                <option value="Admin">Admin</option>
+            </select></td>
+            <td><span class="pull-right" style="white-space: nowrap">
+                <button type="button" class="btn btn-light rr-create"><i class="fa fa-plus"></i></i></button>
+                <button type="button" class="btn btn-light rr-update"><i class="fa fa-check"></i></i></button>
+              </span></td>
+        </tr>
+        <tbody class="bg-light border border-secondary  rr-tbody">
+        <tr class="rr-template rr-user rr-hidden">
+            <td class="rr-username">jdoe</td>
+            <td>&nbsp;</td>
+            <td class="rr-first-name">John</td>
+            <td class="rr-last-name">Doe</td>
+            <td class="rr-role">Faculty</td>
+            <td class="rr-actions">
+        <span class="pull-right" style="white-space: nowrap">
+             <button type="button" class="btn btn-dark rr-remove"><i class="fa fa-times"></i></i></button>
+             <button type="button" class="btn btn-dark rr-edit"><i class="fa fa-pencil"></i></i></button>
+        </span>
+            </td>
+        </tr>
+        <tr class="rr-template rr-user rr-hidden">
+            <td class="rr-username">jdoe</td>
+            <td>&nbsp;</td>
+            <td class="rr-first-name">John</td>
+            <td class="rr-last-name">Doe</td>
+            <td class="rr-role">Faculty</td>
+            <td class="rr-actions">
+        <span class="pull-right" style="white-space: nowrap">
+             <button type="button" class="btn btn-dark rr-remove"><i class="fa fa-times"></i></i></button>
+             <button type="button" class="btn btn-dark rr-edit"><i class="fa fa-pencil"></i></i></button>
+        </span>
+            </td>
+        </tr>
+        <tr class="rr-template rr-user rr-hidden">
+            <td class="rr-username">jdoe</td>
+            <td>&nbsp;</td>
+            <td class="rr-first-name">John</td>
+            <td class="rr-last-name">Doe</td>
+            <td class="rr-role">Faculty</td>
+            <td class="rr-actions">
+        <span class="pull-right" style="white-space: nowrap">
+             <button type="button" class="btn btn-dark rr-remove"><i class="fa fa-times"></i></i></button>
+             <button type="button" class="btn btn-dark rr-edit"><i class="fa fa-pencil"></i></i></button>
+        </span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+</html>
