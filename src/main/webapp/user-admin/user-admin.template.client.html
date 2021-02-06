@@ -65,48 +65,12 @@
                 <button type="button" class="btn btn-light rr-update"><i class="fa fa-check"></i></i></button>
               </span></td>
         </tr>
-        <tbody class="bg-light border border-secondary  rr-tbody">
-        <tr class="rr-template rr-user rr-hidden">
-            <td class="rr-username">jdoe</td>
-            <td>&nbsp;</td>
-            <td class="rr-first-name">John</td>
-            <td class="rr-last-name">Doe</td>
-            <td class="rr-role">Faculty</td>
-            <td class="rr-actions">
-        <span class="pull-right" style="white-space: nowrap">
-             <button type="button" class="btn btn-dark rr-remove"><i class="fa fa-times"></i></i></button>
-             <button type="button" class="btn btn-dark rr-edit"><i class="fa fa-pencil"></i></i></button>
-        </span>
-            </td>
-        </tr>
-        <tr class="rr-template rr-user rr-hidden">
-            <td class="rr-username">jdoe</td>
-            <td>&nbsp;</td>
-            <td class="rr-first-name">John</td>
-            <td class="rr-last-name">Doe</td>
-            <td class="rr-role">Faculty</td>
-            <td class="rr-actions">
-        <span class="pull-right" style="white-space: nowrap">
-             <button type="button" class="btn btn-dark rr-remove"><i class="fa fa-times"></i></i></button>
-             <button type="button" class="btn btn-dark rr-edit"><i class="fa fa-pencil"></i></i></button>
-        </span>
-            </td>
-        </tr>
-        <tr class="rr-template rr-user rr-hidden">
-            <td class="rr-username">jdoe</td>
-            <td>&nbsp;</td>
-            <td class="rr-first-name">John</td>
-            <td class="rr-last-name">Doe</td>
-            <td class="rr-role">Faculty</td>
-            <td class="rr-actions">
-        <span class="pull-right" style="white-space: nowrap">
-             <button type="button" class="btn btn-dark rr-remove"><i class="fa fa-times"></i></i></button>
-             <button type="button" class="btn btn-dark rr-edit"><i class="fa fa-pencil"></i></i></button>
-        </span>
-            </td>
-        </tr>
+        <tbody id="table-users" class="bg-light border border-secondary  rr-tbody">
+         <!-- Dynamically generated table rows -->
         </tbody>
     </table>
 </main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="user-admin.controller.client.js"></script>
 </body>
 </html>
