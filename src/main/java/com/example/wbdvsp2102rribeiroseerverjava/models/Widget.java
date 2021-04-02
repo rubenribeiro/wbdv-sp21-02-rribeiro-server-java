@@ -1,29 +1,66 @@
 package com.example.wbdvsp2102rribeiroseerverjava.models;
 
+import javax.persistence.*;
+
+//@Entity
+//@Table(name="widgets", schema="wbsd_sp21_02_schema")
+//import javax.persistence.*;
+
+@Entity
+@Table(name="widgets")
 public class Widget {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String topicId;
+
     private String type;
     private Integer size;
+    private Integer width;
+    private Integer height;
     private String text;
+    private String name;
+    private Boolean ordered;
+    private String src;
 
-    public Widget(Long id, String topicId, String type, Integer size, String text) {
-        this.id = id;
-        this.topicId = topicId;
-        this.type = type;
-        this.size = size;
-        this.text = text;
+    public Boolean getOrdered() {
+        return ordered;
     }
 
-    public Widget() {
+    public void setOrdered(Boolean ordered) {
+        this.ordered = ordered;
     }
 
-    public Long getId() {
-        return id;
+    public String getSrc() {
+        return src;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setSrc(String src) {
+        this.src = src;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getWidth() {
+        return width;
+    }
+
+    public void setWidth(Integer width) {
+        this.width = width;
+    }
+
+    public Integer getHeight() {
+        return height;
+    }
+
+    public void setHeight(Integer height) {
+        this.height = height;
     }
 
     public String getTopicId() {
@@ -32,6 +69,16 @@ public class Widget {
 
     public void setTopicId(String topicId) {
         this.topicId = topicId;
+    }
+
+    private String topicId;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getType() {
@@ -55,6 +102,17 @@ public class Widget {
     }
 
     public void setText(String text) {
+        this.text = text;
+    }
+
+    public Widget() {
+    }
+
+    public Widget(Long id, String topicId, String type, Integer size, String text) {
+        this.id = id;
+        this.topicId = topicId;
+        this.type = type;
+        this.size = size;
         this.text = text;
     }
 }
